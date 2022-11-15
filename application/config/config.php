@@ -25,8 +25,8 @@ $config['modules_locations'] = array(
 | a PHP script and you can easily do that on your own.
 |
 */
-// $config['base_url'] = 'http://localhost/commit/';
-$config['base_url'] = 'https://ukm-commit-uika.herokuapp.com/';
+$config['base_url'] = 'http://localhost/commit/';
+// $config['base_url'] = 'https://ukm-commit-uika.herokuapp.com/';
 
 /*
 |--------------------------------------------------------------------------

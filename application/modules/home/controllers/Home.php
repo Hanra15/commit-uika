@@ -1,23 +1,23 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller
+class Home extends MY_Controller
 {
 	// View Home
 	public function index()
 	{
-		$title = 'UKM COMMIT UIKA BOGOR';
-		//add more function
+		$page_content["css"] = '';
+        $page_content["js"] = '';
+        $page_content["title"] = "UKM COMMIT UIKA BOGOR";
 		
-		$data = [
-			'title' => $title,
-		];
+		$page_content["page"] = "frontend/index";
 		
-		$this->load->view('templates/header',$data);
-		$this->load->view('frontend/index',$data);
-		$this->load->view('templates/footer',$data);
+
+		$page_content["data"] = '';
+		$this->templates->loadTemplate($page_content);
 
 		$this->load->helper('url');
+		
 		
 	}
 	
